@@ -1,0 +1,28 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.bloco{
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+
+.text{
+    width: 585px; 
+    height: 20px; 
+    border: 1px solid #ccc; 
+    box-shadow: 2px 2px 4px rgba(25, 0, 255, 2);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 0px;
+    background-color: #f0f0f0;
+}
+
+.frase{
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 150px;
+}
