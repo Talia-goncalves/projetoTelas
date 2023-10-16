@@ -4,7 +4,7 @@ function Blocos({pergunta}){
     return(  
         <div className={styles.bloco}>
             <p>{pergunta}</p>
-            <input type="text" className={styles.text}/>
+            <input type="text" placeholder=" Escreva sua resposta aqui" className={styles.text}/>
         </div>
     )
 }
