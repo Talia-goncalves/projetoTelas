@@ -1,0 +1,10 @@
+.Conjunto{
+    display: inline-flex;
+}
+.ConjuntoImagens{
+    display: inline-block;
+}
+.fila5, .fila6{
+    display: inline-flex;
+    margin-left: 45px;
+}

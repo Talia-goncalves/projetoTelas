@@ -1,18 +1,17 @@
-import styles from './App.css';
-import Header from './components/header/Header';
-import ConjuntoBlocos from './components/blocos/ConjuntoBlocos';
-import Imagem from './components/imagem/Imagem';
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import Tela1 from './Tela1';
+import Tela2 from './Tela2';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <div className={styles.conjunto}>
-        <div><ConjuntoBlocos/></div>
-        <div><Imagem/></div>
-      </div>
-      
-    </div>
+    <BrowserRouter>
+        <Routes>
+            <Route path='/' element={<Tela1/>}/>
+            <Route path='/Tela2' element={<Tela2/>}/>
+        </Routes>
+    </BrowserRouter>
   );
 }
 

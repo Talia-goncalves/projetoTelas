@@ -1,9 +1,13 @@
 import styles from './Imagem.module.css'
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import Tela2 from '../../Tela2';
+import { useNavigate } from 'react-router-dom';
 
 
 const Imagem = () => {
   const [imagemVisivel, setImagemVisivel] = useState(true);
+  const navigateTo = useNavigate()
 
   const alternarImagem = () => {
     setImagemVisivel(!imagemVisivel);
@@ -22,7 +26,12 @@ const Imagem = () => {
         <button className={styles.button} onClick={alternarImagem}>Gerar</button>
       </div>
       <div>
-        <button className={styles.buttonEnviar}>Enviar</button>
+        
+        <button className={styles.buttonEnviar} onClick={()=>{
+          navigateTo("/Tela2")
+        }}>Enviar</button>
+
+
       </div>
     </>
   );

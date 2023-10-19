@@ -1,23 +1,126 @@
-.header{
-  display: flex;
-  align-items: center; 
-  justify-content: space-between;
-  width: 100vw;
+.barrasuperior{
   background-color: #F7DC16;
-  z-index: 99;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 999;
+
+}
+.barrasuperior img{
+  height: 90%;
+}
+.barrasuperior .imMenu{
+  height: 70%;
+  cursor: pointer;
 }
 
-.logo{
-    height: 50px;
-    margin: 5px 43vw 5px 0vh;
-    justify-content: space-between;
-    justify-content: center;
+.usuario{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  font-size: 0.5rem;
+  cursor: pointer;
+  
 }
 
-.bars{
-    color: white; 
-    background-color: #516fbb;
-    height: 35px;
-    border-radius: 10px;
-    margin: 10px;
+.usuario img{
+  height: 60%;
+}
+.usuario h2{
+  padding: 0px;
+  margin: 0px;
+}
+.menuNavegacao{
+  background-color: #1D3C85;
+  display: none; /*Por padão, vamos deixar o menu de navegação invisivel */
+  width: 25%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 90vh;
+  z-index: 999;
+  position: absolute;
+  
+
+}
+.menuNavegacao nav{
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 70vh;
+}
+
+.menuNavegacao button{
+  width: 70%;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.menuNavegacao img{
+  max-width: 60%;
+  padding-bottom: 5vh;    
+}
+
+.menuNavegacao.visivel {
+  display: block; /* Exibido quando a classe visivel é aplicada */
+}
+
+.menuNavegacao.oculto {
+  display: none; /* Oculto quando a classe oculto é aplicada */
+}
+
+.menuUser{
+  background-color: #1D3C85;
+  display: none; /*Por padão, vamos deixar o menu de navegação invisivel */
+  width: 20%;
+  right: 0px;
+  border-bottom-left-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 20vh;
+  z-index: 999;
+  position: absolute;
+
+}
+.menuUser.visivel {
+  display: block; /* Exibido quando a classe visivel é aplicada */
+}
+
+.menuUser.oculto {
+  display: none; /* Oculto quando a classe oculto é aplicada */
+}
+.menuUser nav{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.saindo{
+  background-color: aliceblue;
+  margin: 5%;
+  width: 80%;
+  max-height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+.menuUser img{
+  height: 2rem;
+  margin-left: 20px;
+  margin-right: 10px;
 }

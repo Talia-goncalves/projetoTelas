@@ -4,8 +4,8 @@
     border: 3px solid #1600c0;
     border-radius: 10px;
     box-shadow: 2px 2px 4px rgba(25, 0, 255, 2);
-    margin-left: 750px;
-    margin-top: -410px;
+    margin-left: 720px;
+    margin-top: -430px;
 }
 .imagem{
     width: 200px;
@@ -21,14 +21,14 @@
     width: 80px;
     height: 40px;
     position: absolute;
-    margin-top: 70px;
-    left: 662px;
+    margin-top: 55px;
+    left: 642px;
     font-weight: bold;
     border: 1px solid #ccc; 
     border-radius: 10px;
     box-shadow: 2px 2px 4px rgba(25, 0, 255, 2);
 }
 .buttonEnviar{
-    left: 1173px;
+    left: 1140px;
     margin-top: 10px;
 }
